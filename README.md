@@ -23,12 +23,12 @@ For more information about it,
 
 ## Database access configuration inside code
 
-Under config/config.go directory in the project, you will find database access configuration. You can change it with your custom configuration.
+Create a .env file and use the followig parameters. Note that if you change this you should also change it in the docker/Dockerfile-Postgres to be able to access the connection.
 
-```go
+```text
       DB_USER     = "docker"
-      DB_PASSWORD = "docker"
-      DB_NAME     = "docker"
+      DB_PASSWORD = "changethis"
+      DB_NAME     = "example"
       PORT = "32770"
 ```
 
